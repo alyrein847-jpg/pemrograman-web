@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>Form Pendaftaran Kursus</title>
+</head>
+<body>
+    <table border="1" cellpadding="0" cellspacing="2" width="650" align="center" >
+        <tr>
+            <td>
+                <table border="0" cellpadding="10" cellspacing="0" width="100%" bgcolor="lightblue">
+                    <tr align="center">
+                        <th height="100px" align="center" valign="top">
+                            <font color="red" size="24">Pendaftaran Kursus</font>
+                        </th>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <form>
+                <td bgcolor="grey">
+                    <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                        <tr height="50px">
+                            <th align="left" colspan="2" valign="top"><font size="4">DATA DIRI</font></th>
+                        </tr>
+                        <tr>    
+                            <td width="30%">Nama</td>
+                            <td><input type="text" name = "Nama" size="25"></td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td><input type="text" name = "NIM" size="25" maxlength="13"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="text" name = "E-mail" size="25"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td><input type="date" name="tgl"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Jenis Kelamin</td>
+                            <td>
+                                <input type="radio" name="jenis_kelamin" value="L"> Laki-laki<br>
+                                <input type="radio" name="jenis_kelamin" value="P"> Perempuan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Pilihan Program Kursus</td>
+                            <td>
+                                <input type="checkbox" name="program_1" value="C#"> C# <br>
+                                <input type="checkbox" name="program_2" value="Java" > Java <br>     
+                                <input type="checkbox" name="program_3" value="SQL" > SQL <br>       
+                                <input type="checkbox" name="program_4" value="HTML dan PHP" > HTML dan PHP
+                            </td>
+                        </tr>
+                        <tr height="125px">
+                            <td valign="top">Pilihan hari/Jam kursus</td>
+                            <td valign="top">
+                            <select name="Pilihan Hari/Jam Kursust">
+                            <option value="paket_1"> Senin - Rabu / 07.00 - 09.00 </option>
+                            <option value="paket_2"> Senin - Rabu / 09.00 - 11.00 </option>
+                            <option value="paket_3"> Selasa - Kamis / 10.00 - 12.00 </option>
+                            <option value="paket_4"> Selasa - Kamis / 13.00 - 15.00 </option>
+                            <option value="paket_5"> Rabu - Jumat / 15.00 - 17.00 </option>
+                            <option value="paket_6"> Jumat - Sabtu / 16.00 - 18.00 </option>
+                            </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </form>
+        </tr>
+        <tr>
+            <td bgcolor="#f08080">
+                <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                    <tr>
+                        <td>Komentar Anda</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="deskripsi"  cols="45" rows="5" align="center"> 
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="50px" valign="top">
+                            <form>
+                            <input type="reset" value="Reset" name="Reset">
+                            <input type="submit" value="Submit" name="Submit">
+                            <input type="button" value="Cancel" name="Cancel">
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>   
+    </table>
+</body>
+</html>
