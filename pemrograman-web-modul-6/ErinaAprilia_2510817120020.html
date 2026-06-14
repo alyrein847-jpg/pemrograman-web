@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JPhotography</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      color: #333;
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #222 !important;
+    }
+    .navbar-nav .nav-link {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #555 !important;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    .navbar-nav .nav-link.active {
+      color: #000 !important;
+      font-weight: 700;
+      border: 1.5px solid #aaa;
+      border-radius: 6px;
+      padding-top: 6px !important;
+      padding-bottom: 6px !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #000 !important;
+    }
+    .navbar {
+      background-color: #f8f8f8 !important;
+      border-bottom: 1px solid #e0e0e0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .hero-section {
+      padding: 70px 0 40px;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-style: normal;
+      margin-bottom: 0.3rem;
+      line-height: 1.4;
+    }
+    .hero-section .subtitle {
+      font-size: 0.65rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888;
+    }
+
+
+    .filter-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .filter-section .btn-filter {
+      border: 1px solid #ccc;
+      background: #fff;
+      color: #555;
+      font-size: 0.75rem;
+      padding: 4px 16px;
+      border-radius: 20px;
+      margin: 0 3px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-section .btn-filter.active,
+    .filter-section .btn-filter:hover {
+      background: #555;
+      color: #fff;
+      border-color: #555;
+    }
+
+    .gallery-section {
+      padding: 0 0 60px;
+    }
+    .gallery-item {
+      padding: 3px;
+      overflow: hidden;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(30%);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.04);
+      filter: grayscale(0%);
+    }
+
+    footer {
+      background: #fff;
+      border-top: 1px solid #e0e0e0;
+      padding: 30px 0 20px;
+      text-align: center;
+    }
+    footer .footer-brand {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+      color: #222;
+    }
+    footer .footer-copy {
+      font-size: 0.72rem;
+      color: #aaa;
+      margin-bottom: 18px;
+    }
+    footer .social-icons a {
+      color: #aaa;
+      margin: 0 8px;
+      font-size: 1.35rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer .social-icons a:hover {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">JPhotography</a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="container">
+      <h1>Hi. Hello.. I Am JohnDas...!</h1>
+      <h1>I Travel Around The World To Get The Best Photos.!</h1>
+      <p class="subtitle">Award Winning Photographer / Cinematographer / Writer</p>
+    </div>
+  </section>
+
+  <div class="filter-section">
+    <button class="btn-filter active">All</button>
+    <button class="btn-filter">Landscape</button>
+    <button class="btn-filter">Portrait</button>
+    <button class="btn-filter">Product</button>
+  </div>
+
+  <section class="gallery-section">
+    <div class="container-fluid px-3">
+
+      <!-- 1 -->
+      <div class="row g-0">
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1689518469262-6f9499412ef0" alt="Photo 1">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1693220266419-dd8fee7408b9" alt="Photo 2">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1692132043431-d5a0f72057ff" alt="Photo 3">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://images.unsplash.com/photo-1616285720779-9e597265df0c" alt="Photo 4">
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="row g-0">
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://images.unsplash.com/photo-1461696114087-397271a7aedc" alt="Photo 5">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1675855748166-a66d26c3b6da" alt="Photo 6">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1693493439325-8ed3c6a4750b" alt="Photo 7">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://images.unsplash.com/photo-1555988776-c3f17e5cb789" alt="Photo 8">
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="row g-0">
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1690971631360-c7b4f08b4f94" alt="Photo 9">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://images.unsplash.com/photo-1526344966-89049886b28d" alt="Photo 10">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://images.unsplash.com/photo-1712838189787-776e3101afb3" alt="Photo 11">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://images.unsplash.com/photo-1515592021493-9a2fe91005c4" alt="Photo 12">
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="row g-0">
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://images.unsplash.com/photo-1584831748175-357027100c43" alt="Photo 13">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://images.unsplash.com/photo-1492171983775-a51717616c0d" alt="Photo 14">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1661331837862-46ee497409bf" alt="Photo 15">
+        </div>
+        <div class="col-6 col-md-3 gallery-item">
+          <img src="https://plus.unsplash.com/premium_photo-1673312487608-a13f791e1c6c" alt="Photo 16">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">JPhotography</div>
+    <div class="footer-copy">© Copyrights 2019. All Rights Reserved</div>
+    <div class="social-icons">
+      <a href="#" title="Dribbble"><i class="bi bi-dribbble"></i></a>
+      <a href="#" title="Behance"><i class="bi bi-behance"></i></a>
+      <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="#" title="Threads"><i class="bi bi-threads"></i></a>
+      <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
