@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Workshop Kampus | Pendaftaran</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Workshop Kampus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Buka menu navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kegiatan.html">Kegiatan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pendaftaran.html">Pendaftaran</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4 mb-5">
+
+    <nav aria-label="breadcrumb">
+      <div class="breadcrumb-wrapper">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Pendaftaran</li>
+        </ol>
+      </div>
+    </nav>
+
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+        <div class="form-section">
+          <h2>Form Pendaftaran Workshop</h2>
+          <p class="form-sub">Isikan data dengan benar. Data hanya diproses sebagai simulasi di browser.</p>
+
+          <div id="form-pendaftaran">
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="nama" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+                <input type="text" id="nama" name="nama" class="form-control"
+                  placeholder="Masukkan nama lengkap" autocomplete="name" />
+              </div>
+              <div class="col-md-6">
+                <label for="nim" class="form-label">NIM <span class="text-danger">*</span></label>
+                <input type="text" id="nim" name="nim" class="form-control"
+                  placeholder="Contoh: 2110101234" autocomplete="off" />
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" id="email" name="email" class="form-control"
+                  placeholder="nama@email.com" autocomplete="email" />
+              </div>
+              <div class="col-md-6">
+                <label for="telepon" class="form-label">Nomor Telepon</label>
+                <input type="tel" id="telepon" name="telepon" class="form-control"
+                  placeholder="08xxxxxxxxxx" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="pilihan-workshop" class="form-label">Pilihan Workshop <span class="text-danger">*</span></label>
+                <select id="pilihan-workshop" name="pilihan-workshop" class="form-select">
+                  <option value="">-- Pilih Workshop --</option>
+                  <option value="dasar-uiux">Dasar UI/UX &mdash; Rp 75.000</option>
+                  <option value="javascript-dasar">JavaScript Dasar &mdash; Rp 80.000</option>
+                  <option value="bootstrap-responsif">Bootstrap Responsif &mdash; Rp 70.000</option>
+                  <option value="fotografi-produk">Fotografi Produk &mdash; Rp 90.000</option>
+                  <option value="prototipe-figma">Prototipe dengan Figma &mdash; Rp 85.000</option>
+                  <option value="strategi-konten">Strategi Konten Digital &mdash; Rp 65.000</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="kategori-peserta" class="form-label">Kategori Peserta</label>
+                <select id="kategori-peserta" name="kategori-peserta" class="form-select">
+                  <option value="umum">Umum (tanpa diskon)</option>
+                  <option value="mahasiswa">Mahasiswa, diskon 20%</option>
+                  <option value="pelajar">Pelajar, diskon 10%</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold">Fasilitas Tambahan</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="fasilitas"
+                  value="sertifikat" id="fasilitas-sertifikat" />
+                <label class="form-check-label" for="fasilitas-sertifikat">
+                  Sertifikat cetak, Rp 20.000
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="fasilitas"
+                  value="paket-konsumsi" id="fasilitas-konsumsi" />
+                <label class="form-check-label" for="fasilitas-konsumsi">
+                  Paket konsumsi, Rp 25.000
+                </label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="catatan" class="form-label">Catatan</label>
+              <textarea id="catatan" name="catatan" class="form-control" rows="3"
+                placeholder="Tuliskan kebutuhan atau pertanyaan tambahan"></textarea>
+            </div>
+
+            <div class="mb-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="setuju" name="setuju" />
+                <label class="form-check-label" for="setuju">
+                  Saya menyetujui ketentuan pendaftaran.
+                </label>
+              </div>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <button type="button" id="btn-proses" class="btn-primary-custom">
+                Proses Pendaftaran
+              </button>
+              <button type="button" id="btn-reset" class="btn btn-outline-secondary px-4">
+                Reset
+              </button>
+            </div>
+
+          </div>
+          <div id="ringkasan-pendaftaran" style="display:none;"></div>
+
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="biaya-card">
+          <h5>Ringkasan Biaya</h5>
+          <p class="biaya-note mb-2">Biaya berubah otomatis berdasarkan workshop, kategori peserta, dan fasilitas.</p>
+          <div class="biaya-amount" id="biaya-total">Rp 0</div>
+          <div class="biaya-note" id="biaya-note" style="display:none;"></div>
+          <div id="biaya-rincian" class="mt-2"></div>
+
+          <div class="mt-3">
+            <small class="text-muted">Kuota tersisa (simulasi)</small>
+            <div class="progress mt-1" style="height: 10px;">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 60%;"
+                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <small class="text-muted">18 dari 30 kursi terisi</small>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Portal Workshop Kampus &mdash; Universitas Lambung Mangkurat</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
